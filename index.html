@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Guide</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; margin: 0; }
+        .sidebar { width: 250px; background: #222; color: white; height: 100vh; padding: 20px; position: fixed; }
+        .sidebar h2 { border-bottom: 1px solid white; padding-bottom: 10px; }
+        .sidebar a { color: white; text-decoration: none; display: block; padding: 5px 0; }
+        .sidebar a:hover { text-decoration: underline; }
+        .content { margin-left: 270px; padding: 20px; max-width: 800px; }
+        h1, h2 { color: #333; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>CTF Guide</h2>
+        <a href="#what-is-ctf">What is a CTF?</a>
+        <a href="#basic-walkthrough">Basic Walkthrough</a>
+        <a href="#types">Types of CTFs</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#tips">Tips and Tricks</a>
+        <a href="#quick-links">Quick Links</a>
+    </div>
+
+    <div class="content">
+        <h1 id="what-is-ctf">What is a CTF?</h1>
+        <p>A CTF, also known as Capture the Flag, is a cybersecurity competition where players participate in a variety of challenges to try to find a hidden “flag,” which usually is a piece of text. This guide provides a quick rundown of what you would do in a CTF.</p>
+
+        <h2 id="basic-walkthrough">Basic Walkthrough</h2>
+        <p>Begin with reading the instructions carefully, as clues are often given in the title or instructions. Next, examine the files provided with the challenge, which might include images, documents, or links. If it’s a webpage challenge, inspect the source code. If it’s a downloadable file, inspect its metadata for hidden data.</p>
+
+        <h2 id="types">Types of CTFs</h2>
+        <ul>
+            <li>Cryptography</li>
+            <li>Binary Exploitation</li>
+            <li>Reverse Engineering</li>
+            <li>Web Security</li>
+            <li>Forensics</li>
+            <li>Steganography</li>
+            <li>Pwn</li>
+            <li>Miscellaneous</li>
+        </ul>
+
+        <h2 id="checklist">Checklist</h2>
+        <ul>
+            <li>Read the instructions</li>
+            <li>Read the instructions again</li>
+            <li>Look into the provided hints</li>
+            <li>Look for deeper clues or hidden hints</li>
+            <li>Start inspecting or extracting data from anything suspicious</li>
+            <li>Look for similar CTFs online, as some challenges repeat</li>
+        </ul>
+
+        <h2 id="tips">Tips and Tricks</h2>
+        <ul>
+            <li>Inspect is <b>Ctrl + U</b> (View Source Code)</li>
+            <li>Think like the creator</li>
+            <li>Change up your strategy if you hit a dead end</li>
+            <li>Work systematically</li>
+            <li>Google is your best friend for ciphers and decoding</li>
+        </ul>
+
+        <h2 id="quick-links">Quick Links</h2>
+        <ul>
+            <li><a href="https://www.dcode.fr/cipher-identifier" target="_blank">Cipher and Decode</a></li>
+            <li><a href="https://www.base64decode.org/" target="_blank">Base64 Decoder</a></li>
+            <li><a href="https://md5decrypt.net/en/" target="_blank">MD5 Decrypt</a></li>
+            <li><a href="https://md5hashing.net/hash" target="_blank">General Unhasher</a></li>
+        </ul>
+    </div>
+</body>
+</html>
