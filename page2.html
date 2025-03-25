@@ -3,14 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Page</title>
+    <title>One Piece CTF Walkthrough</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>Second Page</h1>
-        <p>This is a blank second page. You can add more content here.</p>
+        <h1>One Piece CTF Walkthrough</h1>
+        
+        <p>Download the CTF challenge below and try to solve it before checking the walkthrough!</p>
+
+        <!-- Download Button -->
+        <div class="button-container">
+            <a href="ctf.html" download class="button">📥 Download CTF Challenge</a>
+        </div>
+
+        <h2>Walkthrough</h2>
+        <p><strong>Challenge Overview:</strong> The theme is <strong>One Piece</strong> and involves <strong>Base64 encoding</strong> and **HTML inspection**.</p>
+
+        <h3>🔹 Step-by-Step Solution:</h3>
+        <ol>
+            <li>Open the challenge and try entering a password.</li>
+            <li>Click around images—some might be clues.</li>
+            <li>There is an image with the text <strong>"Inspect Me"</strong>.</li>
+            <li>Inspect the HTML of that image (Right-click → "Inspect").</li>
+            <li>You will find an HTML comment revealing the **password: "the one piece"**.</li>
+            <li>Enter the password to unlock a hidden image.</li>
+            <li>The new image hints at <strong>Base64</strong> encoding.</li>
+            <li>Some treasure chest images are **red herrings** (misleading).</li>
+            <li>Inspect the **homepage treasure chest image**, revealing a **GitHub link** in the <code>alt</code> text.</li>
+            <li>The linked GitHub repository contains a file called **"ship log 64"**.</li>
+            <li>This hints that the **flag is Base64-encoded**.</li>
+            <li>Decode the Base64 string found in the file.</li>
+            <li>The correct flag is: <code>Th3_0n3_P!ec3_1s_R3al</code></li>
+            <li>Enter the flag to complete the challenge!</li>
+        </ol>
+
+        <h3>💡 Hints:</h3>
+        <ul>
+            <li>🔍 Be critical and inspect everything carefully.</li>
+            <li>🖱️ Click around—some elements react differently.</li>
+            <li>👀 What is visible? What is hidden?</li>
+            <li>🔑 Common CTF techniques involve **HTML comments** and **Base64 encoding**.</li>
+        </ul>
 
         <!-- Back Button -->
         <div class="button-container">
