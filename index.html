@@ -11,51 +11,67 @@
     <div class="container">
         <h1>CTF Guide</h1>
 
-        <h2>What is a CTF?</h2>
-        <p>A CTF, also known as Capture the Flag, is a cybersecurity competition where players participate in a variety of challenges to try to find a hidden “flag,” which usually is a piece of text. This guide provides a quick rundown of what you need to do in a CTF.</p>
+        <section>
+            <h2>What is a CTF?</h2>
+            <p>A <strong>Capture the Flag (CTF)</strong> is a cybersecurity competition where players solve challenges to find a hidden “flag.” Flags are typically strings of text, like <code>CTF{example_flag}</code>, hidden in files, websites, or code.</p>
+        </section>
 
-        <h2>Basic Walkthrough</h2>
-        <p>Begin by reading the instructions carefully. Clues are often hidden in the title or instructions. Next, examine the files provided in the challenge, which may include images, text files, or links.</p>
-        <p>If it’s a webpage challenge, inspect the source code. If it’s a downloadable file, check its metadata for any hidden information.</p>
+        <section>
+            <h2>Basic Walkthrough</h2>
+            <p>Follow these steps to tackle a CTF challenge:</p>
+            <ol>
+                <li>Read the challenge instructions carefully—hints may be in the title or description.</li>
+                <li>Analyze any files provided (text, images, links, etc.).</li>
+                <li>If it's a webpage, inspect the <code>source code (Ctrl + U)</code> or use developer tools.</li>
+                <li>If it's a file, check for <strong>hidden metadata</strong> or encoded messages.</li>
+            </ol>
+        </section>
 
-        <h2>Types of CTFs</h2>
-        <ul>
-            <li><strong>Cryptography:</strong> Challenges involving encryption and decryption. Common ciphers include Base64, ROT13, and XOR.</li>
-            <li><strong>Binary Exploitation:</strong> Finding vulnerabilities in compiled programs, such as buffer overflows.</li>
-            <li><strong>Reverse Engineering:</strong> Analyzing software or executables to understand their functionality and extract the flag.</li>
-            <li><strong>Web Security:</strong> Exploiting vulnerabilities in web applications, such as SQL injection or XSS.</li>
-            <li><strong>Forensics:</strong> Investigating files, images, or network traffic to extract hidden information.</li>
-            <li><strong>Steganography:</strong> Hiding messages in images, audio files, or other media formats.</li>
-            <li><strong>Pwn:</strong> Exploiting system vulnerabilities and executing malicious code.</li>
-            <li><strong>Miscellaneous:</strong> Various other challenges, including OSINT and trivia-based puzzles.</li>
-        </ul>
+        <section>
+            <h2>Types of CTFs</h2>
+            <ul>
+                <li><strong>Cryptography:</strong> Breaking ciphers, encoding/decoding messages.</li>
+                <li><strong>Binary Exploitation:</strong> Finding vulnerabilities in executable programs.</li>
+                <li><strong>Reverse Engineering:</strong> Analyzing software or code to extract secrets.</li>
+                <li><strong>Web Security:</strong> Exploiting website vulnerabilities (e.g., SQL injection, XSS).</li>
+                <li><strong>Forensics:</strong> Analyzing digital artifacts (files, logs, network packets).</li>
+                <li><strong>Steganography:</strong> Hiding messages inside images, audio, or other files.</li>
+                <li><strong>Pwn:</strong> Exploiting system vulnerabilities and privilege escalation.</li>
+                <li><strong>Miscellaneous:</strong> Fun puzzles, OSINT, or logic-based challenges.</li>
+            </ul>
+        </section>
 
-        <h2>Checklist</h2>
-        <ul>
-            <li>Read the instructions carefully.</li>
-            <li>Read the instructions again.</li>
-            <li>Look into the provided hints.</li>
-            <li>Search for deeper clues or hidden hints.</li>
-            <li>Start inspecting or extracting data from anything that looks suspicious.</li>
-            <li>Look for similar CTFs online, as some challenges are common.</li>
-        </ul>
+        <section>
+            <h2>Checklist</h2>
+            <ul>
+                <li>🔍 Read the instructions (twice, if needed).</li>
+                <li>💡 Look for hints in the title or description.</li>
+                <li>🧐 Check for hidden data in files or webpages.</li>
+                <li>🔑 Try decoding ciphers or hashes.</li>
+                <li>🌎 Google similar CTF challenges for hints.</li>
+            </ul>
+        </section>
 
-        <h2>Tips and Tricks</h2>
-        <ul>
-            <li>Use <code>Ctrl + U</code> to inspect a webpage’s source code.</li>
-            <li>Think like the creator—where would they hide the flag?</li>
-            <li>Change your approach if you're stuck at a dead end.</li>
-            <li>Work systematically—keep track of what you've tried.</li>
-            <li>Google is your best friend when dealing with ciphers and decoding methods.</li>
-        </ul>
+        <section>
+            <h2>Tips and Tricks</h2>
+            <ul>
+                <li>🖥️ Use <code>Ctrl + U</code> to inspect a webpage’s source code.</li>
+                <li>🧠 Think like the challenge creator—where would you hide a flag?</li>
+                <li>🔄 If stuck, change strategies or try a different approach.</li>
+                <li>📌 Work systematically—keep notes of what you've tried.</li>
+                <li>🔍 Use <strong>Google</strong> to find decoding tools for ciphers and hashes.</li>
+            </ul>
+        </section>
 
-        <h2>Quick Links</h2>
-        <ul>
-            <li><a href="https://www.dcode.fr/cipher-identifier" target="_blank">Cipher and Decode</a></li>
-            <li><a href="https://www.base64decode.org/" target="_blank">Base64 Decoder</a></li>
-            <li><a href="https://md5decrypt.net/en/" target="_blank">MD5 Decrypt</a></li>
-            <li><a href="https://md5hashing.net/hash" target="_blank">General Unhasher</a></li>
-        </ul>
+        <section>
+            <h2>Quick Links</h2>
+            <ul>
+                <li>🛠️ <a href="https://www.dcode.fr/cipher-identifier" target="_blank">Cipher Identifier</a></li>
+                <li>🔢 <a href="https://www.base64decode.org/" target="_blank">Base64 Decoder</a></li>
+                <li>🔓 <a href="https://md5decrypt.net/en/" target="_blank">MD5 Decrypt</a></li>
+                <li>🔍 <a href="https://md5hashing.net/hash" target="_blank">General Hash Unhasher</a></li>
+            </ul>
+        </section>
     </div>
 
     <script src="script.js"></script>
