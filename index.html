@@ -8,46 +8,50 @@
 </head>
 <body>
 
-    <div class="sidebar">
-        <h2>CTF Guide</h2>
-        <a href="#what-is-ctf">What is a CTF?</a>
-        <a href="#walkthrough">Basic Walkthrough</a>
-        <a href="#types">Types of CTFs</a>
-        <a href="#checklist">Checklist</a>
-        <a href="#tips">Tips & Tricks</a>
-        <a href="#links">Quick Links</a>
-    </div>
-
     <div class="main-content">
         <h1 id="what-is-ctf">What is a CTF?</h1>
-        <p>A CTF, also known as Capture the Flag, is a cybersecurity competition...</p>
+        <p>A CTF, also known as Capture the Flag, is a cybersecurity competition where players participate in various challenges to find a hidden “flag,” which is usually a piece of text. This guide will give a quick rundown of how to approach CTF challenges.</p>
 
         <h1 id="walkthrough">Basic Walkthrough</h1>
-        <p>To begin, read the instructions carefully...</p>
+        <p>To begin, carefully read the challenge instructions. Often, clues are hidden within the title or description. Next, examine the files or links provided. If it’s a webpage challenge, inspect the page source. If it’s a downloadable file, check its metadata or contents for hidden information.</p>
 
         <h1 id="types">Types of CTFs</h1>
         <ul>
-            <li>Cryptography</li>
-            <li>Binary Exploitation</li>
-            <li>Reverse Engineering</li>
-            <li>Web Security</li>
-            <li>Forensics</li>
+            <li><strong>Cryptography</strong> – Challenges involving encryption and decryption. Common ciphers include Base64, ROT13, and XOR.</li>
+            <li><strong>Binary Exploitation</strong> – Finding vulnerabilities in compiled programs (buffer overflows, format string exploits).</li>
+            <li><strong>Reverse Engineering</strong> – Analyzing software or executables to understand their inner workings and extract the flag.</li>
+            <li><strong>Web Security</strong> – Exploiting web applications through SQL injection, XSS, or authentication bypass techniques.</li>
+            <li><strong>Forensics</strong> – Investigating files (images, network traffic, memory dumps) to recover hidden data or patterns.</li>
+            <li><strong>Steganography</strong> – Hiding messages in images, audio files, or other media. Common tools: `stegsolve`, `zsteg`, `exiftool`.</li>
+            <li><strong>Pwn</strong> – Exploiting system vulnerabilities, often using shellcode and debugging tools like GDB.</li>
+            <li><strong>Miscellaneous</strong> – Random challenges that don’t fit into other categories, such as OSINT or trivia-based puzzles.</li>
         </ul>
 
         <h1 id="checklist">Checklist</h1>
         <ul>
             <li>Read the instructions carefully</li>
-            <li>Look into provided hints</li>
+            <li>Double-check hints and clues</li>
             <li>Inspect files and metadata</li>
+            <li>Use online decoding tools for ciphers</li>
+            <li>Try common CTF techniques before overcomplicating</li>
         </ul>
 
         <h1 id="tips">Tips & Tricks</h1>
-        <p>Inspect is Ctrl + U. Think like the creator...</p>
+        <ul>
+            <li>Press <code>Ctrl + U</code> to view page source (for web challenges).</li>
+            <li>Think like the challenge creator—where would they hide the flag?</li>
+            <li>Change your approach if you hit a dead end.</li>
+            <li>Work systematically and take notes to track progress.</li>
+            <li>Google is your best friend—look up common encoding formats and tools.</li>
+        </ul>
 
         <h1 id="links">Quick Links</h1>
         <p><a href="https://www.dcode.fr/cipher-identifier" target="_blank">Cipher Decoder</a></p>
+        <p><a href="https://www.base64decode.org/" target="_blank">Base64 Decoder</a></p>
+        <p><a href="https://md5decrypt.net/en/" target="_blank">MD5 Decrypt</a></p>
+        <p><a href="https://md5hashing.net/hash" target="_blank">General Unhasher</a></p>
     </div>
-<script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
